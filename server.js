@@ -1,5 +1,5 @@
 const express = require("express");
-require('dotenv').config()
+
 
 const cookieSession = require('cookie-session') //give access to cookie
 const passport = require('passport') //to tell passport to use cookie
