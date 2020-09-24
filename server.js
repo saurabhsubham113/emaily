@@ -1,5 +1,8 @@
 const express = require("express");
-
+if ((process.env.NODE_ENV !== 'production')){
+    require('dotenv').config()
+}
+    
 
 const cookieSession = require('cookie-session') //give access to cookie
 const passport = require('passport') //to tell passport to use cookie
