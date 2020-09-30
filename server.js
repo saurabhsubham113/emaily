@@ -3,7 +3,7 @@ if ((process.env.NODE_ENV !== 'production')) {
     require('dotenv').config()
 }
 
-const morgan = require('morgan')
+// const morgan = require('morgan')
 const cookieSession = require('cookie-session') //give access to cookie
 const passport = require('passport') //to tell passport to use cookie
 
