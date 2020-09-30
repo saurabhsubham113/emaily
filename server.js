@@ -22,7 +22,7 @@ app.use(passport.initialize())
 app.use(passport.session())
 
 //for devlopment purpose
-app.use(morgan("dev"))
+// app.use(morgan("dev"))
 
 /*Returns middleware that only parses json and only looks at requests
  where the Content-Type header matches the type option. */
