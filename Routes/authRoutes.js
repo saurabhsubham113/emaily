@@ -7,12 +7,17 @@ router.get('/auth/google', passport.authenticate('google', {
 }))
 
 //It will not authenticate with oAuth flow make it will into a user profile
-router.get('/auth/google/callback', passport.authenticate('google'))
+router.get(
+    '/auth/google/callback',
+    passport.authenticate('google'),
+    (req, res) => {
+        res.redirect('/surveys')
+    })
 
 //logging out of the application
 router.get('/api/logout', (req, res) => {
     req.logOut()
-    res.send("You're successfully logged out")
+    res.redirect('/')
 })
 
 //get the current user

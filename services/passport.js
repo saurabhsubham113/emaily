@@ -1,6 +1,5 @@
 const passport = require("passport");
 const GoogleStrategy = require("passport-google-oauth20").Strategy;
-console.log('passport files');
 const mongoose = require('mongoose')
 
 const User = mongoose.model('User')
