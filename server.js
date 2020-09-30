@@ -38,7 +38,7 @@ const billingRoute = require('./Routes/billingRoutes')
 app.use(authRoute)
 app.use(billingRoute)
 
-if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV == 'production') {
     //express will serve up production assets
     //like main.js or main.css file
     app.use(express.static('client/build'))
